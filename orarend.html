@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stilus.css">
+    <title>Órarend</title>
+</head>
+<body>
+
+    <div class="flex-container">
+        <header id="cim">Órarend</header>
+        <div class="button-container">
+            <button id="hatterGomb">Háttérszín változtatása</button>
+        </div>
+        <div class="table-container">
+            <table>
+                <tr>
+                    <th>Hétfő</th>
+                    <th>Kedd</th>
+                    <th>Szerda</th>
+                    <th>Csütörtök</th>
+                    <th>Péntek</th>
+                </tr>
+                <tr>
+                    <td>Matematika</td>
+                    <td>Történelem</td>
+                    <td>Angol</td>
+                    <td>Matematika</td>
+                    <td class="info">Informatika</td>
+                </tr>
+                <tr>
+                    <td>Történelem</td>
+                    <td>Fizika</td>
+                    <td>Irodalom</td>
+                    <td>Irodalom</td>
+                    <td>Irodalom</td>
+                </tr>
+                <tr>
+                    <td>Testnevelés</td>
+                    <td>Irodalom</td>
+                    <td>Matematika</td>
+                    <td>Testnevelés</td>
+                    <td>Matematika</td>
+                </tr>
+                <tr>
+                    <td>Angol</td>
+                    <td>Matematika</td>
+                    <td>Történelem</td>
+                    <td>Fizika</td>
+                    <td class="info">Informatika</td>
+                </tr>
+                <tr>
+                    <td class="info">Informatika</td>
+                    <td>Angol</td>
+                    <td>Testnevelés</td>
+                    <td class="nemet">Német</td>
+                    <td>Angol</td>
+                </tr>
+             <tr>
+                    <td class="nemet">Német</td>
+                    <td class="info">Informatika</td>
+                    <td class="info">Informatika</td>
+                    <td>Matematika</td>
+                    <td>Történelem</td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="flex-container2">
+            <table>
+                <tr>
+                    <td class="info">A világos barna hátterű órákon csak az informatika szakos diákoknak kell részt venniük.</td>
+                    <td class="nemet">A piros hátterű órákon csak azoknak a diákoknak kell részt venniük, akik felvették a német nyelvet.</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <script>
+        const hatterGomb = document.getElementById('hatterGomb');
+        let sotetMod = false;
+
+        hatterGomb.addEventListener('click', () => {
+            const flexContainer = document.querySelector('.flex-container');
+
+            if (sotetMod) {
+                flexContainer.style.backgroundColor = 'rgba(240, 232, 238, 60%)';
+                hatterGomb.textContent = 'Sötét mód';
+            } else {
+                flexContainer.style.backgroundColor = 'rgba(0, 0, 0, 0.6)';
+                hatterGomb.textContent = 'Világos mód';
+            }
+
+            sotetMod = !sotetMod;
+        });
+    </script>
+</body>
+</html>

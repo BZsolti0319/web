@@ -1,0 +1,82 @@
+body {
+    background-image: url(https://wallpaperaccess.com/full/2381677.jpg);
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 35px;
+    background-color: rgba(240, 232, 238, 60%);
+    padding-top: 20px;
+}
+
+#cim {
+    font-size: 80px;
+    text-align: center;
+    background-color: brown;
+    color: yellow;
+    position: relative;
+}
+.button-container {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+#hatterGomb {
+    background-color: red;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.flex-container2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.table-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+table {
+    margin: 10px;
+    padding: 20px;
+    color: black;
+    font-size: 30px;
+    border-collapse: collapse;
+}
+
+th {
+    font-size: 40px;
+    color: rgb(206, 30, 30);
+    background-color: burlywood;
+}
+
+td {
+    color: gold;
+    background-color: brown;
+    padding: 10px;
+}
+
+.info {
+    background-color: peru;
+    color: rgb(0, 255, 213);
+}
+
+.nemet {
+    background-color: red;
+    color: rgb(0, 255, 55);
+}
