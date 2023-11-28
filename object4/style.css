@@ -1,0 +1,52 @@
+.hero-card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 10px;
+    width: 200px;
+    text-align: center;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.hero-card:hover {
+    transform: scale(1.05);
+}
+
+.hero-card h2 {
+    color: #333;
+    font-size: 18px;
+    margin-bottom: 8px;
+}
+
+.hero-card p {
+    color: #666;
+    font-size: 14px;
+    margin: 0;
+}
+
+#heroes-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: grey;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th, td {
+    border: 1px solid grey;
+    padding: 8px;
+    text-align: left;
+}
+
+.hero-image {
+    width: 100%;
+    height: 350px;
+    border-radius: 8px 8px 0 0;
+}
