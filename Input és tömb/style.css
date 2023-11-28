@@ -1,0 +1,41 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: bisque;
+}
+
+.container {
+    text-align: center;
+}
+
+#input-container {
+    margin-bottom: 20px;
+}
+
+button {
+    margin-left: 10px;
+}
+
+.card {
+    position: relative;
+    display: inline-block;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 5px;
+    background-color: aqua;
+}
+
+.card:hover button {
+    display: block;
+}
+
+.card button {
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+    display: none;
+}
