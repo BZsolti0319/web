@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid 1</title>
+    <style>
+        .grid-container {
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
+          grid-template-rows: repeat(2, 1fr);
+          gap: 0.5rem;
+        }
+      
+        .grid-item {
+          background-color: red;
+          opacity: 80%;
+          padding: 1rem;
+          font-size: 1.5rem;
+          text-align: center;
+        }
+      </style>
+</head>
+<body>
+  <h1 style="text-align: center;">1.feladat</h1>
+    <div class="grid-container">
+        <div class="grid-item">1</div>
+        <div class="grid-item">2</div>
+        <div class="grid-item">3</div>
+        <div class="grid-item">4</div>
+      </div>
+</body>
+</html>
