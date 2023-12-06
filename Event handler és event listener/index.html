@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Űrlap</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .form-container {
+            max-width: 300px;
+            margin: 20px auto;
+        }
+
+        input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <form id="myForm">
+            <input type="text" id="myInput" placeholder="írjon be valamit">
+            <button id="submitButton">Nyomj meg!</button>
+        </form>
+    </div>
+
+    <script>
+        const form = document.getElementById("myForm");
+        const input = document.getElementById("myInput");
+        const submitButton = document.getElementById("submitButton");
+        submitButton.addEventListener("click", function (event) {
+            event.preventDefault();
+            logText();
+        });
+        submitButton.onclick = function (event) {
+            event.preventDefault();
+            logText();
+        };
+        function logText() {
+            const textValue = input.value;
+            console.log("Szöveg: " + textValue);
+        }
+    </script>
+</body>
+</html>
