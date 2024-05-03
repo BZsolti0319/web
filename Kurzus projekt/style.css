@@ -1,0 +1,21 @@
+.course {
+    cursor: pointer;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    display: inline-block;
+  }
+  
+  .student {
+    margin-bottom: 5px;
+  }
+  
+  #student-details {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  #course-details {
+    text-align: center;
+  }
