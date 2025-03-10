@@ -1,0 +1,38 @@
+img {
+    height: 30px;
+}
+
+.villam {
+    height: 15px;
+}
+
+.kep {
+    display: flex;
+    flex-direction: row;
+}
+
+.first {
+    display: flex;
+    justify-content: center;
+
+}
+
+.second {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 15px;
+    width: 750px;
+    margin-left: 30%;
+
+}
+
+.third {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 15px;
+    width: 750px;
+    margin-top: 30px;
+    margin-left: 30%;
+}
